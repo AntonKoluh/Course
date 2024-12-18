@@ -3,9 +3,10 @@ Legs = int(input("Enter Legs: "))
 
 Parts = (Heads, Legs)
 Cows = int(Parts[1]/2 - Parts[0])
-expectedParts = (Cows + Parts[0] - Cows, (Parts[0] - Cows)*2 + Cows*4)
+Results = (Cows, abs(Parts[0] - Cows))
+checkParts = ((Results[0]+Results[1]), (Results[0]*4 + Results[1]*2))
 
-if (expectedParts[0] - Parts[0]) or (expectedParts[1] - Parts[1]) != 0:
-    print("Impossible Solution")
+if (checkParts[0] - Parts[0]) or (checkParts[1] - Parts[1]) is not 0:
+    print ("Impossible")
 else:
-    print (f"Chickens:{Parts[0]-Cows} Cows:{Cows}")
+    print(Results)
