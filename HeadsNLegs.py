@@ -1,5 +1,5 @@
-Heads = int(input("Enter Heads: "))
-Legs = int(input("Enter Legs: "))
+Heads = int(input("Heads: "))
+Legs = int(input("Legs: "))
 
 Parts = (Heads, Legs)
 Cows = int(Parts[1]/2 - Parts[0])
