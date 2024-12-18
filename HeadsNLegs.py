@@ -9,4 +9,4 @@ checkParts = ((Results[0]+Results[1]), (Results[0]*4 + Results[1]*2))
 if (checkParts[0] - Parts[0]) or (checkParts[1] - Parts[1]) is not 0:
     print ("Impossible")
 else:
-    print(Results)
+    print(f"(Cow, Chicken): {Results}")
