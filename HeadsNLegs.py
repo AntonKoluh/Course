@@ -1,12 +1,12 @@
-Heads = int(input("Enter Heads: "))
-Legs = int(input("Enter Legs: "))
+heads = int(input("Enter Heads: "))
+legs = int(input("Enter Legs: "))
 
-Parts = (Heads, Legs)
-Cows = int(Parts[1]/2 - Parts[0])
-Results = (abs(Cows), abs(Parts[0] - Cows))
-checkParts = ((Results[0] + Results[1]), (Results[0]*4 + Results[1]*2))
+parts = (heads, legs)
+cows = int(parts[1]/2 - parts[0])
+results = (abs(cows), abs(parts[0] - cows))
+check_parts = ((results[0] + results[1]), (results[0]*4 + results[1]*2))
 
-if Parts == checkParts:
-    print(f"(Cow, Chicken): {Results}")
+if parts == check_parts:
+    print(f"(Cow, Chicken): {results}")
 else:
     print ("Impossible")
